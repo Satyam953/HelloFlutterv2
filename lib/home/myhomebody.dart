@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:copy_linkedin/naturalreader/naturalreaders.dart';
 //import 'package:copy_linkedin/mypaint.dart';
 //import 'package:copy_linkedin/gh/ghflutter.dart';
-import 'emailandpassword.dart';
+import '../authentication/emailandpassword.dart';
 
 class LoginHome extends StatelessWidget {
   @override

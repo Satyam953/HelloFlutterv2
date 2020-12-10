@@ -2,8 +2,8 @@ library emailandpassword;
 
 import 'package:flutter/material.dart';
 //import 'package:copy_linkedin/naturalreader/naturalreaders.dart';
-import 'package:copy_linkedin/gh/ghflutter.dart';
-import 'afterlogin.dart';
+//import 'package:copy_linkedin/gh/ghflutter.dart';
+import 'package:copy_linkedin/userhome/userhomepage.dart';
 
 class MyLinkedinEmailPassword extends StatefulWidget {
   @override
@@ -91,7 +91,7 @@ class MyEmailPassword extends State<MyLinkedinEmailPassword> {
                         //this.user = tuser;
                         if (tpwd.isEmpty) return 'Password required *';
                         if (tpwd.length < 7) return 'Password is too short';
-                        if (GHFlutter(this.user, tpwd) != true)
+                        if ('MDQ6VXNlcjk5MzgzMzc' != tpwd)
                           return 'Incorrect Password *';
                         else
                           this.pwd = tpwd;
@@ -131,8 +131,7 @@ class MyEmailPassword extends State<MyLinkedinEmailPassword> {
                     _formkeyp.currentState.validate()) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => AfterLogin(this.user)),
+                    MaterialPageRoute(builder: (context) => UserHomePageBar()),
                   );
                 } else
                   ScaffoldMessenger.of(context).showSnackBar(

@@ -1,6 +1,6 @@
-import 'package:copy_linkedin/myhomebody.dart';
+import 'package:copy_linkedin/home/myhomebody.dart';
 import 'package:flutter/material.dart';
-import 'myappbarlinkedin.dart';
+import 'home/myappbarlinkedin.dart';
 
 void main() {
   runApp(MyApp());

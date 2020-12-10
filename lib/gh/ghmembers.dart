@@ -16,10 +16,15 @@ library ghmembers;
 
 class Member {
   final String login;
+  final String nodeid;
   final String avatarUrl;
 
-  Member(this.login, this.avatarUrl) {
+  Member(this.login, this.nodeid, this.avatarUrl) {
     if (login == null) {
+      throw ArgumentError("login of Member cannot be null. "
+          "Received: '$login'");
+    }
+    if (nodeid == null) {
       throw ArgumentError("login of Member cannot be null. "
           "Received: '$login'");
     }
