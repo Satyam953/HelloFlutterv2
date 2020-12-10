@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Linkedin',
+      title: 'Linkedinlogin',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
